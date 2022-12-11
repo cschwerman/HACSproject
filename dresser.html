@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/dresserstyle.css">
+    <title>Custom Panda</title>
+</head>
+<body onload="createModel()">
+    <div class="container">
+        <div class="section-left">
+            <div class="clothing-item" id="outfit-btn">
+                <img src="./assets/dress.png" alt="Dress" width="75" height="75">
+            </div>
+            <div class="clothing-item" id="hair-btn">
+                <img src="./assets/hair.png" alt="Hair" width="75" height="75">
+            </div>
+            <div class="clothing-item" id="eyes-btn">
+                <img src="./assets/eyes.png" alt="Eyes" width="75" height="75">
+            </div>
+            <div class="clothing-item" id="shoe-btn">
+                <img src="./assets/shoes.png" alt="Shoe" width="75" height="75">
+            </div>
+        </div>
+
+        <div class="section-mid">
+            <img src="./assets/Model/1.png" alt="Base Model" width="400" class="model-image">
+            <img src="./assets/Outfit/1.png" alt="Outfit" width="400" class="model-overlay" id="outfit-overlay">
+            <img src="./assets/Eyes/1.png" alt="Eyes" width="400" class="model-overlay" id="eyes-overlay">
+            <img src="./assets/Shoes/1.png" alt="Shoes" width="400" class="model-overlay" id="shoes-overlay">
+            <img src="./assets/Hair/1.png" alt="Hair" width="400" class="model-overlay" id="hair-overlay">
+        </div>
+
+        <div class="section-right">
+            <div class="top-section">
+                <div class="basic-information">
+                    <div class="info-item">
+                        <h2>Name:</h2>
+                        <p id="nameTag"></p>
+                    </div>
+                    <div class="info-item">
+                        <h2>Age:</h2>
+                        <p id="ageTag"></p>
+                    </div>
+                    <div class="info-item">
+                        <h2>Gender:</h2>
+                        <p id="genderTag"></p>
+                    </div>
+                    <div class="info-item">
+                        <h2>Height:</h2>
+                        <p id="heightTag"></p>
+                    </div>
+                    <div class="info-item">
+                        <h2>Weight:</h2>
+                        <p id="weightTag"></p>
+                    </div>
+                </div>
+                <div class="other-information">
+                    <div class="info-item">
+                        <h2>Background:</h2>
+                        <p id="backgroundTag"></p>
+                    </div>
+                    <div class="info-item">
+                        <h2>Birthplace:</h2>
+                        <p id="birthplaceTag"></p>
+                    </div>
+                    <div class="personalityStack">
+                        <h2>Personality:</h2>
+                        <div class="info-item">
+                            <h4>Emotion</h4>
+                            <p id="emotionTag"></p>
+                        </div>
+                        <div class="info-item">
+                            <h4>Happiness</h4>
+                            <p id="happinessTag"></p>
+                        </div>
+                        <div class="info-item">
+                            <h4>Calmness</h4>
+                            <p id="clamnessTag"></p>
+                        </div>
+                        <div class="info-item">
+                            <h4>Braveness</h4>
+                            <p id="bravenessTag"></p>
+                        </div>
+                        <div class="info-item">
+                            <h4>Orderly</h4>
+                            <p id="orderlyTag"></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="links">
+                <div class="homebtn" id="home-btn">
+                    <h2>Home</h2>
+                </div>
+                <div class="resetbtn" id="reset-btn">
+                    <h2>Reset</h2>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="./js/dresser.js"></script>
+</body>
+</html>
