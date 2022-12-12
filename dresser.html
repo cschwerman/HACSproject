@@ -1,5 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
+    <!--Author: CC
+    results: character model page with the character infomation shown
+    -->
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,8 +10,10 @@
     <link rel="stylesheet" href="./css/dresserstyle.css">
     <title>Custom Panda</title>
 </head>
+<!--createModel() updates the model once the page loads-->
 <body onload="createModel()">
     <div class="container">
+        <!--Clothing/assest buttons-->
         <div class="section-left">
             <div class="clothing-item" id="outfit-btn">
                 <img src="./assets/dress.png" alt="Dress" width="75" height="75">
@@ -23,7 +28,7 @@
                 <img src="./assets/shoes.png" alt="Shoe" width="75" height="75">
             </div>
         </div>
-
+        <!--Character model area-->
         <div class="section-mid">
             <img src="./assets/Model/1.png" alt="Base Model" width="400" class="model-image">
             <img src="./assets/Outfit/1.png" alt="Outfit" width="400" class="model-overlay" id="outfit-overlay">
@@ -31,7 +36,7 @@
             <img src="./assets/Shoes/1.png" alt="Shoes" width="400" class="model-overlay" id="shoes-overlay">
             <img src="./assets/Hair/1.png" alt="Hair" width="400" class="model-overlay" id="hair-overlay">
         </div>
-
+        <!--Character information pulled from local storage-->
         <div class="section-right">
             <div class="top-section">
                 <div class="basic-information">
@@ -90,7 +95,7 @@
                     </div>
                 </div>
             </div>
-
+            <!--Links to the home page and the character infoamtion page (resets infoamtion and model when clicked)-->
             <div class="links">
                 <div class="homebtn" id="home-btn">
                     <h2>Home</h2>
